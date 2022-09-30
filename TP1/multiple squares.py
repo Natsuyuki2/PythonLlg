@@ -1,6 +1,6 @@
 import turtle as t
 t.color('red')
-
+U=0
 def Carré(N):
     for l in range(4) :
         t.forward(N)
@@ -15,5 +15,6 @@ for m in range(3) :
         t.down()
         t.done
     t.up()
-    t.goto(0,75)
-
+    U=U+75
+    t.goto(0,U)
+    t.down()
